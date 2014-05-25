@@ -3,12 +3,10 @@
 # 2. Get the value of the matrix
 # 3. Set the value of the inverse
 # 4. Get the value of the inverse
-
 # sample usage
 # x<-makeCacheMatrix()
 # x$set(matrix(1:4,2,2)
 # cacheSolve(x)
-
 
 makeCacheMatrix <- function(x = matrix()) {
     # storage for inverse matrix
@@ -30,7 +28,7 @@ makeCacheMatrix <- function(x = matrix()) {
     getinv <- function() inv
 
 
-    # Return the matrix with our newly defined functions
+    # Return matrix with newly defined functions
     list(set = set, get = get, setinv = setinv, getinv = getinv)
 }
 
