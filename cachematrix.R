@@ -1,11 +1,14 @@
-## Put comments here that give an overall description of what your
-## functions do
-
 # makeCacheMatrix: return a list of functions to:
 # 1. Set the value of the matrix
 # 2. Get the value of the matrix
 # 3. Set the value of the inverse
 # 4. Get the value of the inverse
+
+# sample usage
+# x<-makeCacheMatrix()
+# x$set(matrix(1:4,2,2)
+# cacheSolve(x)
+
 
 makeCacheMatrix <- function(x = matrix()) {
     # storage for inverse matrix
